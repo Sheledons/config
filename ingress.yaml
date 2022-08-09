@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: config-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/app-root: /v2
+spec:
+  rules:
+    - host: config-center.cn
+      http:
+        paths:
+          - path: /v2
+            pathType: Prefix
+            backend:
+              service:
+                name: config-service
+                port:
+                  number: 8081
+    - host: config-center.cn
+      http:
+        paths:
+          - path: /v3
+            pathType: Prefix
+            backend:
+              service:
+                name: config-service
+                port:
+                  number: 18848
