@@ -3,8 +3,8 @@ package sdk
 import (
 	"context"
 	"fmt"
-	"github.com/Sheledons/config/pkg/log"
-	"github.com/Sheledons/config/pkg/protocol"
+	"github.com/Sheledons/config/config-sdk/pkg/log"
+	"github.com/Sheledons/config/config-sdk/pkg/protocol"
 	"github.com/spaolacci/murmur3"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

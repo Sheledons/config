@@ -2,7 +2,7 @@ package examples
 
 import (
 	"fmt"
-	"github.com/Sheledons/config/sdk"
+	"github.com/Sheledons/config/config-sdk/sdk"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package sdk
 
 import (
 	"fmt"
-	"github.com/Sheledons/config/pkg/log"
+	"github.com/Sheledons/config/config-sdk/pkg/log"
 	"sync"
 	"time"
 )

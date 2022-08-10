@@ -2,8 +2,8 @@ package sdk
 
 import (
 	"context"
-	"github.com/Sheledons/config/pkg/log"
-	"github.com/Sheledons/config/pkg/protocol"
+	"github.com/Sheledons/config/config-sdk/pkg/log"
+	"github.com/Sheledons/config/config-sdk/pkg/protocol"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials/insecure"
