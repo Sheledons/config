@@ -1,4 +1,4 @@
-module xconfig-sdk-go
+module github.com/Sheledons/config-sdk-go/config-sdk
 
 go 1.18
 
