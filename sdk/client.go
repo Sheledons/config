@@ -2,12 +2,12 @@ package sdk
 
 import (
 	"context"
+	"github.com/Sheledons/config/pkg/log"
+	"github.com/Sheledons/config/pkg/protocol"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials/insecure"
 	"time"
-	"xconfig-sdk-go/pkg/log"
-	protocol2 "xconfig-sdk-go/pkg/protocol"
 )
 
 /**
@@ -58,12 +58,12 @@ func (c *client) StartSubscribe() {
 		log.Sugar.Errorf(c.addr)
 		return
 	}
-	sc := protocol2.NewStreamConfigServiceClient(c.conn)
+	sc := protocol.NewStreamConfigServiceClient(c.conn)
 	for _, sub := range c.subscribers {
 		go c.process(sub, sc)
 	}
 }
-func (c *client) process(sub *Subscriber, sc protocol2.StreamConfigServiceClient) {
+func (c *client) process(sub *Subscriber, sc protocol.StreamConfigServiceClient) {
 	go sub.startSubscribe(c.name, sc, c.errChannel)
 	go func() { // 监控协程，每个subscriber只会有一个
 		for {

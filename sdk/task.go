@@ -2,9 +2,9 @@ package sdk
 
 import (
 	"fmt"
+	"github.com/Sheledons/config/pkg/log"
 	"sync"
 	"time"
-	"xconfig-sdk-go/pkg/log"
 )
 
 /**

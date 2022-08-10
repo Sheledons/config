@@ -2,8 +2,8 @@ package examples
 
 import (
 	"fmt"
+	"github.com/Sheledons/config/sdk"
 	"testing"
-	"xconfig-sdk-go/sdk"
 )
 
 /**

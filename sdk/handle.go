@@ -2,11 +2,11 @@ package sdk
 
 import (
 	"fmt"
+	"github.com/Sheledons/config/pkg/log"
+	"github.com/Sheledons/config/pkg/packet"
+	"github.com/Sheledons/config/pkg/protocol"
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/wrapperspb"
-	"xconfig-sdk-go/pkg/log"
-	"xconfig-sdk-go/pkg/packet"
-	"xconfig-sdk-go/pkg/protocol"
 )
 
 /**
