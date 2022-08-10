@@ -2,9 +2,9 @@ package sdk
 
 import (
 	"fmt"
-	"github.com/Sheledons/config/config-sdk/pkg/log"
-	"github.com/Sheledons/config/config-sdk/pkg/packet"
-	"github.com/Sheledons/config/config-sdk/pkg/protocol"
+	"github.com/Sheledons/config/pkg/log"
+	"github.com/Sheledons/config/pkg/packet"
+	"github.com/Sheledons/config/pkg/protocol"
 	"github.com/google/uuid"
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/wrapperspb"

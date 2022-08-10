@@ -1,4 +1,4 @@
-module github.com/Sheledons/config/config-sdk
+module github.com/Sheledons/config
 
 go 1.18
 
